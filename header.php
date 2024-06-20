@@ -57,7 +57,7 @@
 							)
 						);
 					?>
-                    <a href="/" class="btn btn-secondary fw-bold"><?php esc_html_e( 'Agenda una reunión', 'dig-tranf' ); ?></a>
+                    <a href="/" class="btn btn-primary fw-bold"><?php esc_html_e( 'Agenda una reunión', 'dig-tranf' ); ?></a>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
 		</nav><!-- /#header -->

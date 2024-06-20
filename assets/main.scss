@@ -56,8 +56,8 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
-$primary: $blue;
-$secondary: $orange;
+$primary: $orange;
+$secondary: $blue;
 
 // Fonts
 $font-family-sans-serif: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -180,11 +180,6 @@ img {
 
 /* Header */
 
-.site-header {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
 #header {
 	.search-form {
 		min-width: 250px;
@@ -203,9 +198,9 @@ img {
 
 /* Main */
 
-#main {
-	margin-top: $spacer;
-}
+// #main {
+// 	margin-top: $spacer;
+// }
 
 /* Footer */
 

@@ -6,7 +6,7 @@
         <h1 class="text-center"> Impulsa tu crecimiento e ingresos </h1>
         <p class="text-center fs-4">Somos tu compañero de crecimiento. Especializads en Ventas B2B, Marketing y Finanzas Corporativas</p>
         <div class="d-flex justify-content-center">
-            <a href="/" class="btn btn-secondary fw-bold">Agenda tu reunión</a>
+            <a href="/" class="btn btn-primary fw-bold">Agenda tu reunión</a>
         </div>
     <?php endif; ?>
 </section>
@@ -38,10 +38,10 @@
                     while(have_posts()): the_post(); 
                         if(in_category('ventas')): ?>
                             <div class="carousel-item">
-                                <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column mx-3" style="height:450px;">
+                                <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column mx-3" style="height:450px;">
                                     <div><?php the_content()?></div>
                                     <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                        <a class="btn btn-secondary">
+                                        <a class="btn btn-primary">
                                             <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -69,10 +69,10 @@
             if(have_posts()):
                 while(have_posts()): the_post(); 
                     if(in_category('Marketing')): ?>
-                        <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column" style="width:350px; height:450px;">
+                        <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column" style="width:350px; height:450px;">
                             <div><?php the_content()?></div>
                             <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                <a class="btn btn-secondary">
+                                <a class="btn btn-primary">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -90,10 +90,10 @@
             if(have_posts()):
                 while(have_posts()): the_post(); 
                     if(in_category('Finanzas')): ?>
-                        <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column" style="width:350px; height:450px;">
+                        <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column" style="width:350px; height:450px;">
                             <div><?php the_content()?></div>
                             <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                <a class="btn btn-secondary">
+                                <a class="btn btn-primary">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -123,7 +123,7 @@
                     Somos un equipo compromentido de explorar a quienes les encanta trabajar para construir hojas de ruta de 
                     crecimiento colaborativo.
                 </p>
-                <a class="btn btn-secondary fw-bold">Conoce al equipo</a>
+                <a class="btn btn-primary fw-bold">Conoce al equipo</a>
                 <a><i></i></a>
                 <a><i></i></a>
                 <a><i></i></a>
@@ -163,7 +163,7 @@
                     <input type="tel" id="buisness" class="form-control"/>
                 </div>
                 <div class="d-flex justify-content-end my-3">
-                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
         </div>
