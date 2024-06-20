@@ -134,24 +134,6 @@
         </div>
     <?php endif; ?>
 </section>
-<section class="my-5">
-    <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/bg-img.png" alt=""/>
-</section>
-<section class="container">
-    <div class="bg-primary text-light p-5 rounded-3 row">
-        <?php if ( is_active_sidebar( 'videocall_section' ) ) : ?>
-            <?php dynamic_sidebar( 'videocall_section' ); ?>
-        <?php else : ?>
-            <div class="col">
-                <h2 class="fs-1 fw-bold">Hablemos!</h2>
-                <p>Las grandes ideas suelen comenzar con un café</p>
-            </div>
-            <div class="col d-flex align-items-center justify-content-center">
-                <a class="btn btn-secondary fw-bold">Agenda una videollamada</a>
-            </div>
-        <?php endif; ?>
-    </div>
-</section>
 <section class="container my-5">
     <div class="row">
         <div class="col d-flex flex-column justify-content-center">
