@@ -43,10 +43,9 @@
                 <i class="fa-solid fa-rocket fs-1 text-secondary"></i>
             </div> 
             <div class="col-9"> 
-            <h3 class="text-secondary fs-4 fw-bold">Aumenta</h3>
-            <p class="mb-0 text-center text-dark">Tus Ventas</p>
+                <h3 class="text-secondary fs-4 fw-bold">Aumenta</h3>
+                <p class="mb-0 text-center text-dark">Tus Ventas</p>
             </div> 
-        </a>
         </a>
     </div>
 </section>
@@ -70,40 +69,33 @@
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div id="carouselServices" class="p-3 carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+        <div id="carouselServices" class="p-3 carousel carousel-dark" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex gap-3">
-                        <?php 
-                        if(have_posts()):
-                            while(have_posts()): the_post(); 
-                                if(in_category('Ventas')): ?>
-                                    <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column" style="width:350px; height:450px;">
-                                        <div><?php the_content()?></div>
-                                        <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                            <a class="btn btn-primary">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </article>
-                        <?php 
-                                endif;
-                            endwhile; 
+                <?php 
+                if(have_posts()):
+                    while(have_posts()): the_post(); 
+                        if(in_category('ventas')): ?>
+                            <div class="carousel-item">
+                                <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column mx-3" style="height:450px;">
+                                    <div><?php the_content()?></div>
+                                    <div class="flex-grow-1 d-flex justify-content-end align-items-end">
+                                        <a class="btn btn-primary">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                <?php 
                         endif;
-                        ?>
-                    </div>
-                </div>
+                    endwhile; 
+                endif;
+                ?>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

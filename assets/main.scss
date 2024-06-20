@@ -381,3 +381,23 @@ img {
 		margin-top: 60px;
 	}
 }
+
+.carousel-item:nth-child(1) {
+    @extend .active;
+}
+
+@media screen and (min-width:576px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+}
