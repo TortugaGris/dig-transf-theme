@@ -11,44 +11,6 @@
     <?php endif; ?>
 </section>
 
-<section class="container py-5">
-    <?php if ( is_active_sidebar( 'benefits_section' ) ) : ?>
-        <?php dynamic_sidebar( 'benefits_section' ); ?>
-    <?php else : ?>
-        <h2 class="text-center fw-bold">
-            Hacemos que startups y empresas <br/><b class="text-secondary">CREZCAN</b><br/> en ingresos y cantidad de clientes
-        </h2>
-    <?php endif; ?>
-    <div class="d-flex gap-5 mt-5">
-        <a class="px-4 py-1 shadow rounded-3 flex-grow-1 text-dark row">
-            <div class="col-3 d-flex align-items-center"> 
-                <i class="fa-solid fa-magnifying-glass fs-1 text-secondary"></i>
-            </div> 
-            <div class="col-9"> 
-                <h3 class="text-secondary fs-4 fw-bold">Encuentra</h3>
-                <p class="mb-0 text-center text-dark">Más clientes</p>
-            </div> 
-        </a>
-        <a class="px-4 py-1 shadow rounded-3 flex-grow-1 text-dark row">
-            <div class="col-3 d-flex align-items-center"> 
-                <i class="fa-solid fa-bolt fs-1 text-secondary"></i>
-            </div> 
-            <div class="col-9"> 
-                <h3 class="text-secondary fs-4 fw-bold">Cierra</h3>
-                <p class="mb-0 text-center text-dark">Más ofertas</p>
-            </div> 
-        </a>
-        <a class="px-4 py-1 shadow rounded-3 flex-grow-1 text-dark row">
-            <div class="col-3 d-flex align-items-center"> 
-                <i class="fa-solid fa-rocket fs-1 text-secondary"></i>
-            </div> 
-            <div class="col-9"> 
-                <h3 class="text-secondary fs-4 fw-bold">Aumenta</h3>
-                <p class="mb-0 text-center text-dark">Tus Ventas</p>
-            </div> 
-        </a>
-    </div>
-</section>
 <section class="container my-5">
     <?php if ( is_active_sidebar( 'services_section' ) ) : ?>
         <?php dynamic_sidebar( 'services_section' ); ?>
