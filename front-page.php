@@ -169,17 +169,4 @@
         </div>
     </div>
 </section>
-<section style="margin-top: 300px;">
-    <?php if ( is_active_sidebar( 'email_section' ) ) : ?>
-        <?php dynamic_sidebar( 'email_section' ); ?>
-    <?php else : ?>
-        <div class="position-relative">
-            <div class="text-light container py-5">
-                <h2 class="fs-1 fw-bold mb-4" style="width: 425px;">Estamos a un correo electrónico de distancia</h2>
-                <a class="btn btn-secondary fw-bold">Empecemos</a>
-            </div>
-            <img class="img-fluid position-absolute bottom-0 start-0" src="<?php echo get_template_directory_uri();?>/img/bg-last.png" alt="" style="z-index:-1;"/>
-        </div>
-    <?php endif; ?>
-</section>
 <?php get_footer(); ?>
