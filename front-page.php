@@ -134,39 +134,6 @@
         </div>
     <?php endif; ?>
 </section>
-<section class="my-5 container">
-    <?php if ( is_active_sidebar( 'success_cases_section' ) ) : ?>
-        <?php dynamic_sidebar( 'success_cases_section' ); ?>
-    <?php else : ?>
-        <div class="container mb-4">
-            <h2 class="fw-bold text-center">Casos de éxito</h2>
-            <h3 class="fs-5 text-center">Tu historia puede ser como una de estas</h3>
-        </div>
-    <?php endif; ?>
-    <article class="bg-primary text-light p-5 row">
-        <div class="col-3">
-            <div class="d-flex flex-column align-items-center">
-                <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri();?>/img/client-logo-1.png" width="113px" alt=""/>
-                <div>
-                    <a href="/" class="btn btn-secondary fw-bold fs-4">Sitio web</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-9">
-            <div>
-                <h3 class="fs-5 fw-bold">Analytics FC</h3>
-                <h4 class="fs-6 fw-bold">Industria: : Inteligencia de datos</h4>
-                <h4 class="fs-6 fw-bold">Target : Global</h4>
-                <p>
-                    Analytics FC es el punto de encuentro entre el fútbol y los datos. Con un conjunto de servicios que 
-                    van desde el scouting a la consultoría y los inversores, están empoderando a los jugadores clave del 
-                    deporte. En 2022, Analytics FC y Saravá unieron sus fuerzas y empezaron a trabajar en Latinoamérica. 
-                    Ahora estamos preparados y les ayudamos a dar grandes pasos en Arabia Saudí.
-                </p>
-            </div>
-        </div>
-    </article>
-</section>
 <section class="container my-5">
     <?php if ( is_active_sidebar( 'working_with_us_section' ) ) : ?>
         <?php dynamic_sidebar( 'working_with_us_section' ); ?>
