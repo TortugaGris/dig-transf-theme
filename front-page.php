@@ -134,16 +134,6 @@
         </div>
     <?php endif; ?>
 </section>
-<section class="container my-5">
-    <?php if ( is_active_sidebar( 'working_with_us_section' ) ) : ?>
-        <?php dynamic_sidebar( 'working_with_us_section' ); ?>
-    <?php else : ?>
-        <h2 class="fw-bold mb-4 text-center">Ya creciendo con nosotros</h2>
-        <div class="d-flex justify-content-center">
-            <img src="<?php echo get_template_directory_uri();?>/img/client-logo-1-white.png" alt=""/>
-        </div>
-    <?php endif; ?>
-</section>
 <section class="my-5">
     <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/bg-img.png" alt=""/>
 </section>
