@@ -13,7 +13,7 @@
 				endif;
 			?>
 		</main><!-- /#main -->
-		<footer id="footer" class="bg-secondary text-white">
+		<footer id="footer" class="bg-primary text-white">
 			<div class="p-5">
 				<div class="row">
 					<?php
@@ -43,7 +43,7 @@
 
 								if ( current_user_can( 'manage_options' ) ) :
 							?>
-								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge bg-secondary"><?php esc_html_e( 'Edit', 'dig-tranf' ); ?></a></span><!-- Show Edit Widget link -->
+								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge bg-primary"><?php esc_html_e( 'Edit', 'dig-tranf' ); ?></a></span><!-- Show Edit Widget link -->
 							<?php
 								endif;
 							?>

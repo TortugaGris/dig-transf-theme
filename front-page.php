@@ -6,7 +6,7 @@
         <h1 class="text-center"> Impulsa tu crecimiento e ingresos </h1>
         <p class="text-center fs-4">Somos tu compañero de crecimiento. Especializads en Ventas B2B, Marketing y Finanzas Corporativas</p>
         <div class="d-flex justify-content-center">
-            <a href="/" class="btn btn-primary fw-bold">Agenda tu reunión</a>
+            <a href="/" class="btn btn-secondary fw-bold">Agenda tu reunión</a>
         </div>
     <?php endif; ?>
 </section>
@@ -38,10 +38,10 @@
                     while(have_posts()): the_post(); 
                         if(in_category('ventas')): ?>
                             <div class="carousel-item">
-                                <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column mx-3" style="height:450px;">
+                                <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column mx-3" style="height:450px;">
                                     <div><?php the_content()?></div>
                                     <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                        <a class="btn btn-primary">
+                                        <a class="btn btn-secondary">
                                             <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -69,10 +69,10 @@
             if(have_posts()):
                 while(have_posts()): the_post(); 
                     if(in_category('Marketing')): ?>
-                        <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column" style="width:350px; height:450px;">
+                        <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column" style="width:350px; height:450px;">
                             <div><?php the_content()?></div>
                             <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                <a class="btn btn-primary">
+                                <a class="btn btn-secondary">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -90,10 +90,10 @@
             if(have_posts()):
                 while(have_posts()): the_post(); 
                     if(in_category('Finanzas')): ?>
-                        <article class="rounded-4 border border-2 border-secondary p-4 d-flex flex-column" style="width:350px; height:450px;">
+                        <article class="rounded-4 border border-2 border-primary p-4 d-flex flex-column" style="width:350px; height:450px;">
                             <div><?php the_content()?></div>
                             <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-                                <a class="btn btn-primary">
+                                <a class="btn btn-secondary">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -123,7 +123,7 @@
                     Somos un equipo compromentido de explorar a quienes les encanta trabajar para construir hojas de ruta de 
                     crecimiento colaborativo.
                 </p>
-                <a class="btn btn-primary fw-bold">Conoce al equipo</a>
+                <a class="btn btn-secondary fw-bold">Conoce al equipo</a>
                 <a><i></i></a>
                 <a><i></i></a>
                 <a><i></i></a>
@@ -143,12 +143,12 @@
             <h3 class="fs-5 text-center">Tu historia puede ser como una de estas</h3>
         </div>
     <?php endif; ?>
-    <article class="bg-secondary text-light p-5 row">
+    <article class="bg-primary text-light p-5 row">
         <div class="col-3">
             <div class="d-flex flex-column align-items-center">
                 <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri();?>/img/client-logo-1.png" width="113px" alt=""/>
                 <div>
-                    <a href="/" class="btn btn-primary fw-bold fs-4">Sitio web</a>
+                    <a href="/" class="btn btn-secondary fw-bold fs-4">Sitio web</a>
                 </div>
             </div>
         </div>
@@ -181,7 +181,7 @@
     <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/bg-img.png" alt=""/>
 </section>
 <section class="container">
-    <div class="bg-secondary text-light p-5 rounded-3 row">
+    <div class="bg-primary text-light p-5 rounded-3 row">
         <?php if ( is_active_sidebar( 'videocall_section' ) ) : ?>
             <?php dynamic_sidebar( 'videocall_section' ); ?>
         <?php else : ?>
@@ -190,7 +190,7 @@
                 <p>Las grandes ideas suelen comenzar con un café</p>
             </div>
             <div class="col d-flex align-items-center justify-content-center">
-                <a class="btn btn-primary fw-bold">Agenda una videollamada</a>
+                <a class="btn btn-secondary fw-bold">Agenda una videollamada</a>
             </div>
         <?php endif; ?>
     </div>
@@ -224,7 +224,7 @@
                     <input type="tel" id="buisness" class="form-control"/>
                 </div>
                 <div class="d-flex justify-content-end my-3">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
                 </div>
             </form>
         </div>
@@ -237,7 +237,7 @@
         <div class="position-relative">
             <div class="text-light container py-5">
                 <h2 class="fs-1 fw-bold mb-4" style="width: 425px;">Estamos a un correo electrónico de distancia</h2>
-                <a class="btn btn-primary fw-bold">Empecemos</a>
+                <a class="btn btn-secondary fw-bold">Empecemos</a>
             </div>
             <img class="img-fluid position-absolute bottom-0 start-0" src="<?php echo get_template_directory_uri();?>/img/bg-last.png" alt="" style="z-index:-1;"/>
         </div>
